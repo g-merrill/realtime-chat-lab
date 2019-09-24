@@ -1,8 +1,16 @@
+* {
+  border: 1px solid;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
 }
 
 a {
   color: #00B7FF;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }

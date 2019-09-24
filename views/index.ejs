@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+  <title>Realtime Chat Lab</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <section>
+    <div>
+      <input id="name-input" type="text" placeholder="Enter your name">
+    </div>
+    <div>
+      <textarea id="msg-input" cols="30" rows="10" placeholder="Enter a message"></textarea>
+    </div>
+    <button id="send-btn">Send</button>
+  </section>
+  <div>
+    <p>Chat:</p>
+    <section id="msg-section"></section>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javascripts/app.js"></script>
+</body>
 </html>
